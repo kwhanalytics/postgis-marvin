@@ -1,4 +1,4 @@
-FROM splashblot/docker-postgis:9.6
+FROM mdillon/postgis:11
 
 ADD . /postgis-public
 
