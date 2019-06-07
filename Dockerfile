@@ -16,6 +16,7 @@ RUN apt-get update \
            postgresql-server-dev-$PG_MAJOR \
            postgresql-plpython-$PG_MAJOR \
            postgresql-$PG_MAJOR-plproxy \
+           libgeos-c1 \
            ca-certificates \
            python-pip \
            python-dev \
