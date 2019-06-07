@@ -2,21 +2,20 @@
 FROM postgres:11
 MAINTAINER Juanjo Mata <juanjo.mata@gmail.com>
 
-ENV PG_MAJOR 11
-ENV POSTGIS_MAJOR 2.5
+ENV POSTGIS_MAJOR 2.4
+ENV POSTGIS_VERSION 2.4.4+dfsg-4.pgdg90+1
 
 RUN mkdir -p /data/backups
 VOLUME /data/backups
 
 RUN apt-get update \
       && apt-get install -y --no-install-recommends \
-           postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR \
-           postgresql-$PG_MAJOR-postgis-scripts \
+           postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR=$POSTGIS_VERSION \
+           postgresql-$PG_MAJOR-postgis-$POSTGIS_MAJOR-scripts=$POSTGIS_VERSION \
            postgis \
            postgresql-server-dev-$PG_MAJOR \
            postgresql-plpython-$PG_MAJOR \
            postgresql-$PG_MAJOR-plproxy \
-           libgeos-c1 \
            ca-certificates \
            python-pip \
            python-dev \
