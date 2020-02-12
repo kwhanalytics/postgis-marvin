@@ -1,4 +1,4 @@
-Django==1.11.4
+Django==1.11.28
 EasyProcess==0.2.2
 PyExecJS==1.1.0
 PyReact==0.6.0
