@@ -2,7 +2,7 @@ dill==0.2.7.1
 futures==3.2.0
 jinja2==2.8
 matplotlib==1.5.3
-pip==9.0.1
+pip==21.1
 pipreqs==0.4.9
 seaborn==0.7.1
 tzwhere==3.0.3
